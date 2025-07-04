@@ -1,9 +1,20 @@
 general:
   kafka-topic: test-topic
 
+spring:
+  kafka:
+    consumer:
+      group-id: midas-core-group
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: '*'
+      auto-offset-reset: earliest
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    bootstrap-servers: localhost:9092 
 
 
 
 
 
-  
+
