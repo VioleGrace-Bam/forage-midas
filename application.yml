@@ -1,5 +1,6 @@
 general:
   kafka-topic: test-topic
+  
 
 spring:
   kafka:
@@ -13,8 +14,11 @@ spring:
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
     bootstrap-servers: localhost:9092 
 
+incentive:
+  api-url: http://localhost:8080/incentive
 
-
+server:
+  port: 33400
 
 
 

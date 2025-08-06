@@ -56,8 +56,7 @@
 			<artifactId>kafka</artifactId>
 			<version>1.19.1</version>
 		</dependency>
-		
-	</dependencies>
+ </dependencies>
 
 	<build>
 		<plugins>
